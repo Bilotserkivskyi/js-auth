@@ -1,5 +1,4 @@
 @use '../../style' as s;
-
 @use '../field/index.scss' as field;
 
 .field--password {
@@ -10,7 +9,6 @@
 		
 		& .field__icon {
 		@include s.click;
-
 
 		display: block;
 		height: 20px;

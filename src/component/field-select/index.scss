@@ -59,46 +59,45 @@
 		top: calc(50% - 10px);
 	}
 
-		.field__option--list {
-			padding: s.space(4);
-			display: none;
-			border: 1px solid s.color('box');
-			border-radius: 10px;
-			overflow: scroll;
-			background: s.color('background');
-			max-height: 160px;
-			z-index: 1;
-			
+	.field__option--list {
+		padding: s.space(4);
+		display: none;
+		border: 1px solid s.color('box');
+		border-radius: 10px;
+		overflow: scroll;
+		background: s.color('background');
+		max-height: 160px;
+		z-index: 1;			
 
-			.field__option {
-				@include s.click();
-				
-				&:not(:last-of-type) {
-					padding-bottom: s.space(4);
-				}
-				
-				transition: color 0.3s;
-				
-				&[active] {
-					color: s.color('main');
+		.field__option {
+			@include s.click();
 			
-					&:hover {
-						opacity: 1;
-					}
-				}
+			&:not(:last-of-type) {
+				padding-bottom: s.space(4);
 			}
+			
+			transition: color 0.3s;
 			
 			&[active] {
-				display: block;
+				color: s.color('main');
+		
+				&:hover {
+					opacity: 1;
+				}
 			}
-			
-			position: absolute;
-			top: 100%;
-			right: 0px;
-			width: 100%;
 		}
 		
-		.field__input--disabled {
-			display: none;
+		&[active] {
+			display: block;
 		}
+		
+		position: absolute;
+		top: 100%;
+		right: 0px;
+		width: 100%;
 	}
+	
+	.field__input--disabled {
+		display: none;
+	}
+}
