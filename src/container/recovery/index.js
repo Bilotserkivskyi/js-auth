@@ -20,7 +20,7 @@ class RecoveryForm extends Form {
       return this.FIELD_ERROR.IS_EMPTY
     }
 
-    if (String(value).length > 20) {
+    if (String(value).length > 30) {
       return this.FIELD_ERROR.IS_BIG
     }
 
@@ -35,7 +35,7 @@ class RecoveryForm extends Form {
     if (this.disabled === true) {
       this.validateAll()
     } else {
-      this.setAlert('progress', 'Завантаження...')
+      this.setAlert('progress', 'Завантаження даних')
 
       try {
         const res = await fetch('/recovery', {

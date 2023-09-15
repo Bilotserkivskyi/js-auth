@@ -51,41 +51,7 @@ router.get('/user-list-data', function (req, res) {
 })
 
 // ============================================
-// router.get('/user-item', function (req, res) {
-//   return res.render('user-item', {
-//     name: 'user-item',
-//     component: ['back-button'],
-//     title: 'User item page',
-//     data: {},
-//   })
-// })
-
-// router.get('/user-item-data', function (req, res) {
-//   const { id } = req.query
-
-//   if (!id) {
-//     return res.status(400).json({
-//       message: 'Потрібно передати ID користувача',
-//     })
-//   }
-
-//   const user = User.getById(Number(id))
-
-//   if (!user) {
-//     return res.status(400).json({
-//       message: 'Користувач з таким ID не існує',
-//     })
-//   }
-
-//   return res.status(200).json({
-//     user: {
-//       id: user.id,
-//       email: user.email,
-//       role: user.role,
-//       isConfirm: user.isConfirm,
-//     },
-//   })
-// })
+//
 
 // ↙️ тут вводимо шлях (PATH) до сторінки
 router.get('/user-item', function (req, res) {
